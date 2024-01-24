@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           cat << EOF > ~/.ssh/id_ed25519
-          ${{ secrets.SSH_KEY }}
+          ${{ secrets.GITLAB_SSH_KEY }}
           EOF
           cat << EOF > ~/.ssh/config
           Host gitlab.com
