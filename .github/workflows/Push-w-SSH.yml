@@ -34,7 +34,7 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          cat $SSH_KEY > ~/.ssh/id_ed25519
+          cat "$SSH_KEY" > ~/.ssh/id_ed25519
           chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_ed25519
           git fetch --unshallow origin
           git remote rename origin old-origin
