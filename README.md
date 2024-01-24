@@ -4,6 +4,7 @@ with a dependency on NixPkgs.cowsay, that runs tests and CI on GitLab, GitHub, R
 
 - [x] Replit Deployment config
 - [x] Push to GitLab, Github Action
+- [x] Push from GitLab GH integration
 - [ ] Nix GitLab CI (tests?)
 - [ ] Nix GitHub CI
 - [ ] Publish to GitHub Pages
