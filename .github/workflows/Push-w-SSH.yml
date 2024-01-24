@@ -46,5 +46,5 @@ jobs:
         shell: bash
         run: |
           git remote rename origin old-origin
-          git remote add origin ${{ env.GITLAB_ORIGIN }}
+          git remote add origin ${{ GITLAB_ORIGIN }}
           git push --set-upstream origin --all
