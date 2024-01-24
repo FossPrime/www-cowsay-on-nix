@@ -1,4 +1,4 @@
-# This is a basic workflow to help you get started with Actions
+# Push to GitLab with Project Access Token (1 year limit)
 
 name: Push to GitLab
 
@@ -6,8 +6,6 @@ name: Push to GitLab
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
