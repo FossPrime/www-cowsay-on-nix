@@ -31,7 +31,7 @@ jobs:
       - name: Run a multi-line script
         shell: bash
         env:
-          GITLAB_KEY: ${{ secrets.GITLAB_KEY }}
+          GITLAB_KEY: ${{ secrets.GITLAB_PAT }}
         run: |
           git fetch --unshallow origin
           git remote rename origin old-origin
