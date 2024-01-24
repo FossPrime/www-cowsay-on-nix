@@ -1,0 +1,11 @@
+run = "cowsay www-cowsay-on-nix!"
+
+compile = "mkdir -p public && cowsay Fully operational! > public/index.html; sed -i '1s;^;<pre>\\n;' public/index.html"
+
+[nix]
+channel = "stable-23_11"
+
+[deployment]
+deploymentTarget = "static"
+publicDir = "public"
+
