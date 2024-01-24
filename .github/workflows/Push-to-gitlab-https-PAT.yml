@@ -1,6 +1,6 @@
 # Push to GitLab with Project Access Token (1 year limit)
 
-name: Push to GitLab
+name: Push to GitLab with PAT
 
 # Controls when the workflow will run
 on:
