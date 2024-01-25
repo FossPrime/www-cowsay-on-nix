@@ -5,6 +5,12 @@ compile = "mkdir -p public && cowsay Fully operational! > public/index.html; sed
 [nix]
 channel = "stable-23_11"
 
+[env]
+PATH = "/home/runner/$REPL_SLUG/.config/npm/node_global/bin:/home/runner/$REPL_SLUG/node_modules/.bin:./node_modules/.bin"
+npm_config_prefix = "/home/runner/$REPL_SLUG/.config/npm/node_global" # Global install support
+npm_config_yes="true" # This is a safe space, don't ask stupid questions
+NODE_OPTIONS="--max_old_space_size=384"
+
 [deployment]
 deploymentTarget = "static"
 publicDir = "public"
